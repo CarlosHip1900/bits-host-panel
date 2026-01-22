@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Aleo } from "next/font/google";
+
 import "./globals.css";
+import { NavBar } from "./components/navbar";
 
 const aleo = Aleo({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -23,9 +25,13 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
         />
       </head>
 
-      <body className="antialiased min-h-screen text-white">
+      <body className="min-h-screen bg-[#080808] text-white">
         <div className="min-h-screen py-5 container mx-auto">
-
+          <header className="pt-5">
+            <div className="max-w-[1650px] mx-auto flex justify-center">
+              { NavBar() }
+            </div>
+          </header>
         </div>
       </body>
     </html>
