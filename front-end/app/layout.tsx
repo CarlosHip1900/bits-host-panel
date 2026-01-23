@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Aleo } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
 import "./globals.css";
 import { NavBar } from "./components/navbar";
 
-const aleo = Aleo({
+const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
-  variable: "--font-aleo",
+  variable: "--font-montserrat",
 });
 
 export const metadata: Metadata = {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
-    <html lang="en" className={aleo.className}>
+    <html lang="en" className={montserrat.className}>
       <head>
         <link
           rel="stylesheet"

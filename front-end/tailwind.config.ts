@@ -4,7 +4,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ["var(--font-aleo)"],
+        roboto: ["var(--font-montserrat)"],
       },
     },
   },
